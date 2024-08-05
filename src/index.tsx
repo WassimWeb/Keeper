@@ -1,3 +1,18 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+
+
+
+
 //1. Create a new React app.
 //2. Create a App.jsx component.
 //3. Create a Header.jsx component that renders a <header> element
