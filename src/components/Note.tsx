@@ -8,9 +8,13 @@ export default function Note({notes}:NoteProps) {
         <>
             {notes.map(note => (
                 <>
-                    <div className="note">
-                        <h1>{note.title}</h1>
-                        <p>{note.content}</p>
+                    <div className="card">
+                        <div className="card-header">
+                        {note.title}
+                        </div>
+                        <div className="card-body">
+                            <p>{note.content}</p>
+                        </div>
                     </div>
                 </>
             ))}
