@@ -54,3 +54,76 @@ footer p {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+.card {
+  font-family: "McLaren", cursive;
+  margin: 16px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  padding: 10px;
+  float: left;
+}
+
+.card-header {
+  background: linear-gradient(to right, #FEB941, #DD761C);
+  padding: 50px 10px;
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #fff;
+
+}
+
+.card-body {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff41ff, #ff4b2b);
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 10px 5px;
+  transition: 0.3s;
+}
+
+.card-body .btn:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive media queries */
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

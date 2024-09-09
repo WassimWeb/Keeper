@@ -1,10 +1,23 @@
-export default function Note() {
+import { NotesType } from "../notes"
+
+interface NoteProps{
+    notes: NotesType[]
+}
+export default function Note({notes}:NoteProps) {
     return(
         <>
-        <div className="note">
-            <h1>first Note</h1>
-            <p>to make sure to be better</p>
-        </div>
+            {notes.map(note => (
+                <>
+                    <div className="card">
+                        <div className="card-header">
+                        {note.title}
+                        </div>
+                        <div className="card-body">
+                            <p>{note.content}</p>
+                        </div>
+                    </div>
+                </>
+            ))}
         </>
     )
 }
